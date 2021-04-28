@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./rsc/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class='container'>
+        <div class='content'>
+            <div class='hour'>
+                <div class='hour-content'>
+                    <p id='heure'></p>
+                    <p>:</p>
+                    <p id='minute'></p>
+                </div>
+                <div class='jour'>
+                    <p>Jour : <span id='day'></span></p>
+                </div>
+            </div>
+            <section class='reserve'>
+                <p>Stock de nourriture : <span id='eat'></span></p>
+                <p>Température : <span id='degres'></span></p>
+                <p>PH : <span id='ph'></span></p>
+            </section>
+        
+            <section class='btn'>
+                <button id='stock'>
+                    Réaprovisionner
+                    <audio src="./rsc/song/Click.mp3" class='clickBtn'></audio>
+                </button>
+                <button id='nettoyage'>
+                    Nettoyer
+                    <audio src="./rsc/song/Click.mp3" class='clickBtn'></audio>
+                </button>
+            </section>
+        </div>
+    </div>
+
+    <div class='container'>
+        <section>
+            <p id='alertStock'></p>
+            <p id='alertPh'></p>
+            <p id='alertNettoyage'></p>
+        </section>
+    </div>
+
+    <div class='modal'>
+        <p>Vous devez remetre du stock !</p>
+    </div>
+
+    <script src='./rsc/script/scrit.js'></script>
+</body>
+
+</html>
